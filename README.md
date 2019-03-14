@@ -10,6 +10,7 @@ Theme is responsive.
 * `PROFILE_IMAGE_URL` - Set the image/logo for the top circle cutout on sidebar.
 * `SITESUBTITLE` - Used for the page titles and some meta tags.
 * `DISQUS_SITENAME` - Set this to enable disqus comments in articles.
+* `USE_KATEX` - Whether ornot to load KaTeX
 
 ### ANALYTICS settings
 
