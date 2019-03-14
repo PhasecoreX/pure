@@ -146,7 +146,6 @@ pre {
     margin-left: 15px;
     font-size: 25px;
     color: #fff;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
     text-shadow: 0 1px 3px rgba(0,0,0,0.3);
     font-family: "freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
 }
@@ -421,7 +420,7 @@ ul.related-posts .summary {
     }
 
     .cover-img {
-        background-position: 0 0;
+        background-position: 0;
         background-size: cover;
     }
 
@@ -440,7 +439,6 @@ ul.related-posts .summary {
     }
 
     .cover-body {
-        padding-bottom: 5%;
         padding-top: 0;
     }
 
