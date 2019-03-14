@@ -11,13 +11,13 @@
     <meta name="twitter:creator" content="@svenkreiss" />
     <meta name="twitter:title" content="{% block twitter_title %}{{ SITENAME }}{% endblock %}" />
     <meta name="twitter:description" content="{% block twitter_description %}{{ META_DESCRIPTION }}{% endblock %}" />
-    <meta name="twitter:image:src" content="{% if article.featured_image %}{{SITEURL}}{{article.featured_image}}{% else %}{{SITEURL}}{{ COVER_IMG_URL }}{% endif %}" />
+    <meta name="twitter:image:src" content="{% if article.featured_image %}{{ SITEURL }}/{{article.featured_image}}{% else %}{{ SITEURL }}/{{ COVER_IMG_URL }}{% endif %}" />
     <meta name="twitter:domain" content="svenkreiss.com" />
 
     <meta property="og:title" content="{% block og_title %}{{ SITENAME }}{% endblock %}" />
     <meta property="og:type" content="article" />
     <meta property="og:description" content="{% block og_description %}{{ META_DESCRIPTION }}{% endblock %}" />
-    <meta property="og:image" content="{% if article.featured_image %}{{SITEURL}}{{article.featured_image}}{% else %}{{SITEURL}}{{ COVER_IMG_URL }}{% endif %}" />
+    <meta property="og:image" content="{% if article.featured_image %}{{ SITEURL }}/{{article.featured_image}}{% else %}{{ SITEURL }}/{{ COVER_IMG_URL }}{% endif %}" />
     <meta property="og:site_name" content="svenkreiss.com" />
     <meta property="og:url" content="{{SITEURL}}/{{article.url}}" />
     {% endif %}
