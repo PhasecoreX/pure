@@ -1,10 +1,19 @@
 <footer class="footer">
 {% if page is defined and page.hide_copyright == 'true' %}
 {% else %}
-  {% if not COPYRIGHT_FOOTER %}
-    <p>&copy; {{ SITENAME }} {{ COPYRIGHT_YEARS }}</p>
-  {% else %}
+{% if not COPYRIGHT_FOOTER %}
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+            <li class="pure-menu-item"><a href="{{ SITEURL }}" class="pure-menu-link">&copy; {{ SITENAME }} {{ COPYRIGHT_YEARS }}</a></li>
+            {% if not USE_FONTAWESOME %}
+            {% for title, link in SOCIAL %}
+            <li class="pure-menu-item"><a href="{{ link }}" class="pure-menu-link">{{ title }}</a></li>
+            {% endfor %}
+            {% endif %}
+        </ul>
+    </div>
+{% else %}
     {{ COPYRIGHT_FOOTER }}
-  {% endif %}
+{% endif %}
 {% endif %}
 </footer>

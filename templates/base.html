@@ -43,8 +43,8 @@
     <link href="{{SITEURL}}/{{FAVICON}}" rel="icon">
     {% endif %}
 
-    <!-- KaTeX -->
     {% if USE_KATEX %}
+    <!-- KaTeX -->
     {% if USE_LOCAL_ASSETS %}
     <link rel="stylesheet" href="{{SITEURL}}/extras/katex/katex.min.css" />
     <script src="{{SITEURL}}/extras/katex/katex.min.js"></script>
@@ -56,11 +56,15 @@
     {% endif %}
     {% endif %}
 
+    {% if USE_FONTAWESOME %}
+    <!-- FontAwesome -->
     {% if USE_LOCAL_ASSETS %}
     <link rel="stylesheet" href="{{SITEURL}}/extras/font-awesome/css/font-awesome.min.css" />
     {% else %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
     {% endif %}
+    {% endif %}
+    
     <link rel="stylesheet" href="{{SITEURL}}/theme/css/pure.css?v=0.1.0" />
     {% block head_css %}{% endblock %}
 
